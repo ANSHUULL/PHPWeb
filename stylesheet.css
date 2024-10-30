@@ -1,0 +1,119 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #41018d;
+}
+
+
+
+
+
+
+
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+
+
+/* Main content styles */
+main {
+    padding: 20px;
+    font-size: 98px;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+
+badatext {
+    font-size: 20px;
+    margin-right: 600px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+img {
+
+    float: right;
+    border: 3px solid;
+    margin-left: 100px;
+
+}
+
+
+.text-box {
+    font-size: 42px;
+}
+
+.text-box p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Adjust as needed */
+
+}
+
+button {
+    padding: 10px 50px;
+    font-size: 20px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+footer {
+    background-color: #200046;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 87px;
+    
+}

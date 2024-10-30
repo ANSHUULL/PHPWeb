@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2> <i> Php </i></h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#introduction">Introduction to Php</a></li>
+            <li><a href="#control">Control Structures</a></li>
+            <li><a href="#functions">Functions</a></li>
+            <li><a href="#stringhandling">String Handling</a></li>
+            <li><a href="#arrays">Arrays</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#databases">Databases</a></li>
+            <li><a href="#filesystem">File Systems</a></li>
+
+
+
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Header -->
+        <div id="introduction">
+            <header>
+                <h1> PHP Introduction</h1>
+            </header>
+
+            <!-- Introduction Section -->
+
+            <section>
+                <h2>Introduction to php</h2>
+                <p>
+                    The term PHP is an acronym for - Hypertext Preprocessor. PHP is a server-side scripting language
+                    designed specifically for web development. It is an open-source which means it is free to download
+                    and
+                    use. It is very simple to learn and use. The file extension of PHP is “.php”.
+                    <br>
+                    PHP is a server-side scripting language created primarily for web development but it is also used as
+                    a
+                    general-purpose programming language. Unlike client-side languages like JavaScript, which are
+                    executed
+                    on the user's browser, PHP scripts run on the server. The results are then sent to the client's web
+                    browser as plain HTML.
+                </p>
+            </section>
+            <section id="intro">
+                <h2>What is PHP?</h2>
+                <p>PHP, or Hypertext Preprocessor, is a server-side scripting language embedded in HTML, widely used for
+                    web
+                    development to create interactive web pages.</p>
+            </section>
+
+            <!-- Detailed Features Section -->
+            <section id="features">
+                <h2>Why Learn PHP?</h2>
+                <p>PHP is beginner-friendly, powerful, and has a vast community. It powers many popular CMS platforms
+                    like
+                    WordPress and Drupal.</p>
+                <br>
+                <h3>Key Features of PHP</h3>
+                <ul>
+                    <li><strong>Easy to Learn:</strong> PHP has a simple syntax, making it approachable for beginners.
+                    </li>
+                    <li><strong>Open-Source:</strong> Free and widely supported by a large community.</li>
+                    <li><strong>Cross-Platform:</strong> Works on various platforms, like Windows, Linux, and macOS.
+                    </li>
+                    <li><strong>Database Integration:</strong> Supports databases like MySQL and PostgreSQL, allowing
+                        dynamic content.</li>
+                    <li><strong>Fast and Efficient:</strong> PHP scripts run on the server side, suitable for large
+                        applications.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>History of Php</h2>
+                <p>
+                    PHP was introduced by Rasmus Lerdorf in 1994, the first version and participated in the later
+                    versions.
+                    It is an interpreted language and it does not require a compiler. The language quickly evolved and
+                    was
+                    given the name “PHP,” which initially named was “Personal Home Page.”
+                    <br>
+                    <br>
+
+                    *PHP 3 (1998): The first version considered suitable for widespread use. <br>
+                    *PHP 4 (2000): Improved performance and the introduction of the Zend Engine. <br>
+                    *PHP 5 (2004): Added object-oriented programming features. <br>
+                    *PHP 7 (2015): Significant performance improvements and reduced memory usage. <br>
+                    *PHP 8 (2020): Introduction of Just-In-Time (JIT) compilation, further enhancing performance. <br>
+                    <br>
+                </p>
+            </section>
+
+            <!-- Examples Section -->
+            <section id="examples">
+                <h2>PHP Examples:- </h2>
+
+                <!-- Hello World Example -->
+                <div class="example">
+                    <h3>Hello, World!</h3>
+                    <p>This script outputs "Hello, World!" to the browser:</p>
+                    <pre><code>&lt;?php
+echo "Hello, World!";
+?&gt;
+                </code></pre>
+                </div>
+
+                <!-- Variables Example -->
+                <div class="example">
+                    <h3>Working with Variables</h3>
+                    <p>Declaring variables and outputting them:</p>
+                    <pre><code>&lt;?php
+$name = "Alice";
+echo "Hello, " . $name;
+?&gt;
+                </code></pre>
+                </div>
+
+                <!-- Conditional Example -->
+                <div class="example">
+                    <h3>Conditional Statements</h3>
+                    <p>Using if-else statements to output a greeting based on the time of day:</p>
+                    <pre><code>&lt;?php
+$hour = 15;
+if ($hour &lt; 12) {
+    echo "Good Morning!";
+} else {
+    echo "Good Afternoon!";
+}
+?&gt;
+                </code></pre>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- Control Structures Start -->
+
+        <div id="control">
+
+            <header>
+                <h1>Control Structures</h1>
+            </header>
+
+            <section>
+                <h2>Decision Making</h2>
+                <p>
+                    PHP allows us to perform actions based on some type of conditions that may be logical or
+                    comparative. Based on the result of these conditions i.e., either TRUE or FALSE, an action would be
+                    performed as asked by the user. It's just like a two- way path. If you want something then go this
+                    way or else turn that way. To use this feature, PHP provides us with four conditional statements:
+                    <br>
+                    <br>
+                    *If else Statement <br>
+                    *Switch Statement <br>
+                </p>
+            </section>
+
+            <section>
+                <h2>If-Else Statement</h2>
+                <p>The if-else statement is used to execute code conditionally. If the condition is true, PHP executes
+                    the
+                    first block; otherwise, it executes the else block.</p>
+                <br>
+                <pre><code>&lt;?php
+$age = 20;
+if ($age &gt;= 18) {
+    echo "You are eligible to vote.";
+} else {
+    echo "You are not eligible to vote.";
+}
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Switch Control Structure -->
+            <section>
+                <h2>Switch Statement</h2>
+                <p>The switch statement is a control structure that allows you to execute one out of multiple blocks of
+                    code
+                    based on a given value.</p>
+                <br>
+                <pre><code>&lt;?php
+$day = "Wednesday";
+switch ($day) {
+    case "Monday":
+        echo "Start of the work week!";
+        break;
+    case "Friday":
+        echo "Almost the weekend!";
+        break;
+    default:
+        echo "Have a nice day!";
+}
+?&gt;
+            </code></pre>
+            </section>
+
+            <section>
+                <h2>PHP Loops</h2>
+                <p>
+                    Like other programming languages, PHP Loops are used to repeat a block of code multiple times based
+                    on a given condition. PHP provides several types of loops to handle different scenarios, including
+                    while loops, for loops, do…while loops, and foreach loops. In this article, we will explore the
+                    different types of loops in PHP, their syntax, and examples.
+                </p>
+            </section>
+
+            <section>
+                <h2>Why Use Loops?</h2>
+                <P>
+                    Loops allow you to execute a block of code multiple times without rewrite the code. This is useful
+                    when working with repetitive tasks, such as:
+                    <br>
+                    <br>
+
+                    *Iterating through arrays or data structures <br>
+                    *Performing an action a specific number of times <br>
+                    *Waiting for a condition to be met before proceeding <br>
+                </P>
+            </section>
+
+            <!-- While Loop -->
+            <section>
+                <h2>While Loop</h2>
+                <p>The while loop executes a block of code as long as a specified condition is true. This loop is best
+                    for
+                    situations where the number of iterations is unknown ahead of time.</p>
+                <br>
+                <pre><code>&lt;?php
+$counter = 1;
+while ($counter &lt;= 5) {
+    echo "Count: $counter &lt;br&gt;";
+    $counter++;
+}
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- For Loop -->
+            <section>
+                <h2>For Loop</h2>
+                <p>The for loop is often used when the number of iterations is known. It allows you to iterate a block
+                    of
+                    code a set number of times.</p>
+                <br>
+                <pre><code>&lt;?php
+for ($i = 1; $i &lt;= 5; $i++) {
+    echo "This is loop iteration $i &lt;br&gt;";
+}
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Foreach Loop -->
+            <section>
+                <h2>Foreach Loop</h2>
+                <p>The foreach loop is specifically used to iterate over arrays. It loops through each element in the
+                    array
+                    and assigns it to a variable.</p>
+                <br>
+                <pre><code>&lt;?php
+$fruits = array("Apple", "Banana", "Cherry");
+foreach ($fruits as $fruit) {
+    echo "I love $fruit &lt;br&gt;";
+}
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Do-While Loop -->
+            <section>
+                <h2>Do-While Loop</h2>
+                <p>The do-while loop is similar to the while loop but guarantees at least one iteration. It checks the
+                    condition at the end of the loop.</p>
+                <br>
+                <pre><code>&lt;?php
+$counter = 1;
+do {
+    echo "Count: $counter &lt;br&gt;";
+    $counter++;
+} while ($counter &lt;= 5);
+?&gt;
+            </code></pre>
+            </section>
+
+            <section>
+                <h2>File Inclusion</h2>
+                <p>
+                    You can include the content of a PHP file into another PHP file before the server executes it. There
+                    are two PHP functions which can be used to included one PHP file into another PHP file.
+                    <br>
+                    <br>
+                    The include() Function <br>
+                    The require() Function <br>
+                    <br>
+                    This is a strong point of PHP which helps in creating functions, headers, footers, or elements that
+                    can be reused on multiple pages. This will help developers to make it easy to change the layout of
+                    complete website with minimal effort. If there is any change required then instead of changing
+                    thousand of files just change included file.
+                </p>
+            </section>
+
+        </div>
+
+        <!-- Functions Start -->
+
+        <div id="functions">
+
+
+            <header>
+                <h1>Functions</h1>
+            </header>
+
+            <section>
+                <h2>PHP Functions</h2>
+                <p>
+                    A function is a block of code written in a program to perform some specific task. We can relate
+                    functions in programs to employees in a office in real life for a better understanding of how
+                    functions work. Suppose the boss wants his employee to calculate the annual budget. So how will this
+                    process complete? The employee will take information about the statistics from the boss, performs
+                    calculations and calculate the budget and shows the result to his boss. Functions works in a similar
+                    manner. They take informations as parameter, executes a block of statements or perform operations on
+                    this parameters and returns the result.
+                    PHP provides us with two major types of functions:
+                    <br>
+                    <br>
+
+                    * Built-in functions : PHP provides us with huge collection of built-in library functions. These
+                    functions are already coded and stored in form of functions. To use those we just need to call them
+                    as per our requirement like, var_dump, fopen(), print_r(), gettype() and so on. <br>
+                    <br>
+                    * User Defined Functions : Apart from the built-in functions, PHP allows us to create our own
+                    customised functions called the user-defined functions.
+                    Using this we can create our own packages of code and use it wherever necessary by simply calling
+                    it. <br>
+
+                </p>
+            </section>
+
+            <section>
+                <h2>Why should we use functions?</h2>
+                <p>
+                    *Reusability:- If we have a common code that we would like to use at various parts of a program, we
+                    can simply contain it within a function and call it whenever required. This reduces the time and
+                    effort of repetition of a single code. This can be done both within a program and also by importing
+                    the PHP file, containing the function, in some other program. <br>
+                    <br>
+                    *Easier error detection:- Since, our code is divided into functions, we can easily detect in which
+                    function, the error could lie and fix them fast and easily. <br>
+                    <br>
+                    *Easily maintained:- As we have used functions in our program, so if anything or any line of code
+                    needs to be changed, we can easily change it inside the function and the change will be reflected
+                    everywhere, where the function is called. Hence, easy to maintain. <br>
+                    <br>
+
+                </p>
+            </section>
+
+
+            <!-- Formal and Actual Parameters -->
+            <section>
+                <h2>Formal and Actual Parameters</h2>
+                <p>Formal parameters are defined in the function declaration, while actual parameters are passed when
+                    calling the function.</p>
+                <br>
+                <h3>Example</h3>
+                <pre><code>&lt;?php
+function greet($name) {  // $name is a formal parameter
+    echo "Hello, $name!";
+}
+greet("Alice");  // "Alice" is an actual parameter
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Dynamic Function Calling -->
+            <section>
+                <h2>Dynamic Function Calling</h2>
+                <p>In PHP, function names can be stored in variables and called dynamically, making code flexible.</p>
+                <br>
+                <h3>Example</h3>
+                <pre><code>&lt;?php
+function sayHello() {
+    echo "Hello, World!";
+}
+$func = "sayHello";
+$func();  // Calls sayHello() dynamically
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Call by Value and Call by Reference -->
+            <section>
+                <h2>Call by Value and Call by Reference</h2>
+                <p>Call by value sends a copy of the variable, while call by reference sends the variable itself,
+                    allowing
+                    modification.</p>
+                <br>
+                <h3>Call by Value Example</h3>
+                <pre><code>&lt;?php
+function addTen($num) {
+    $num += 10;
+}
+$number = 5;
+addTen($number);
+echo $number;  // Output: 5
+?&gt;
+            </code></pre>
+                <br>
+                <h3>Call by Reference Example</h3>
+                <pre><code>&lt;?php
+function addTen(&$num) {
+    $num += 10;
+}
+$number = 5;
+addTen($number);
+echo $number;  // Output: 15
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Function and Variable Scope -->
+            <section>
+                <h2>Function and Variable Scope</h2>
+                <p>PHP variables can have local, global, or static scope, affecting where they can be accessed within
+                    the
+                    code.</p>
+                <br>
+                <h3>Example of Variable Scope</h3>
+                <pre><code>&lt;?php
+$globalVar = "I'm global!";
+
+function testScope() {
+    global $globalVar;
+    echo $globalVar;  // Can access global variable with 'global' keyword
+}
+testScope();
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Recursion -->
+            <section>
+                <h2>Recursion</h2>
+                <p>Recursion is when a function calls itself, useful for tasks like calculating factorials.</p>
+                <br>
+                <h3>Example of Recursive Function</h3>
+                <pre><code>&lt;?php
+function factorial($n) {
+    if ($n == 0) return 1;
+    return $n * factorial($n - 1);
+}
+echo factorial(5);  // Output: 120
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- PHP Library Functions -->
+            <section>
+                <h2>PHP Library Functions</h2>
+                <p>PHP has many built-in library functions for string handling, math operations, and more.</p>
+                <br>
+                <h3>Example of Library Functions</h3>
+                <pre><code>&lt;?php
+// String library function
+echo strlen("Hello");  // Output: 5
+
+// Math library function
+echo max(3, 7, 1);  // Output: 7
+?&gt;
+            </code></pre>
+            </section>
+
+        </div>
+
+
+        <!-- String handling start -->
+        <div id="stringhandling">
+
+            <header>
+                <h1>String handling in PHP</h1>
+            </header>
+
+            <!-- Creating and Accessing Strings -->
+            <section>
+                <h2>Creating and Accessing Strings</h2>
+                <p>In PHP, strings can be created using single or double quotes. You can access individual characters
+                    using
+                    indexes.</p>
+                <br>
+                <h3>Example</h3>
+                <pre><code>&lt;?php
+$string = "Hello, World!";
+echo $string[0];  // Output: H
+echo $string[7];  // Output: W
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Interpolation with Curly Braces -->
+            <section>
+                <h2>Interpolation with Curly Braces</h2>
+                <p>PHP allows variable interpolation within double-quoted strings. Curly braces help specify the exact
+                    variable within the string.</p>
+                <br>
+                <h3>Example</h3>
+                <pre><code>&lt;?php
+$name = "Alice";
+echo "Hello, {$name}!";  // Output: Hello, Alice!
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Characters and String Indexes -->
+            <section>
+                <h2>Characters and String Indexes</h2>
+                <p>Each character in a string can be accessed by its index. PHP treats strings as arrays of characters
+                    when
+                    accessed this way.</p>
+                <br>
+                <h3>Example</h3>
+                <pre><code>&lt;?php
+$str = "Example";
+echo $str[2];  // Output: a
+$str[0] = "e";
+echo $str;  // Output: example
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- String Operators -->
+            <section>
+                <h2>String Operators</h2>
+                <p>PHP provides operators like concatenation (.) and concatenation assignment (.=) for handling strings.
+                </p>
+                <br>
+                <p>
+                    1) Concatenation Operator (.) <br>
+                    The concatenation operator (.) is used to join two strings together to form a new string. It does
+                    not modify the original strings; instead, it creates and returns a new string as the result.
+                </p>
+
+                <br>
+                <p>
+                    2) Concatenation assignment operator (.=) <br>
+                    The concatenation assignment operator (.=) appends the right-hand string to the left-hand variable,
+                    effectively modifying the left-hand variable by adding more content to it.
+                </p>
+                <br>
+                <h3>Examples:- </h3>
+                <pre><code>&lt;?php
+$str1 = "Hello";
+$str2 = "World";
+echo $str1 . " " . $str2;  // Output: Hello World
+$str1 .= " Everyone";
+echo $str1;  // Output: Hello Everyone
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- String Functions -->
+            <section>
+                <h2>String Functions</h2>
+                <p>PHP offers built-in functions for string manipulation, including strlen(), strtoupper(),
+                    strtolower(),
+                    and ucfirst().</p>
+                <br>
+                <p>
+                    *strlen($str): Returns the length of the string. <br>
+                    *strtoupper($str): Converts the string to uppercase. <br>
+                    *strtolower($str): Converts the string to lowercase. <br>
+                    *ucfirst($str): Converts the first character of the string to uppercase. <br>
+                    *substr($str, $start, $length): Extracts a substring from the given string. <br>
+                    *strpos($haystack, $needle): Searches for the position of a substring within a string. <br>
+                    *str_replace($search, $replace, $str): Replaces all occurrences of a search string with a
+                    replacement
+                    string. <br>
+                </p>
+                <br>
+                <h3>Examples:- </h3>
+                <pre><code>&lt;?php
+$str = "hello";
+echo strlen($str);  // Output: 5
+echo strtoupper($str);  // Output: HELLO
+echo ucfirst($str);  // Output: Hello
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Formatting Strings -->
+            <section>
+                <h2>Formatting Strings</h2>
+                <p>Formatting functions like printf() and sprintf() allow you to create formatted strings.</p>
+                <br>
+                <h3>Examples:- </h3>
+                <pre><code>&lt;?php
+$number = 123.456;
+printf("Formatted number: %.2f", $number);  // Output: Formatted number: 123.46
+?&gt;
+            </code></pre>
+            </section>
+
+            <!-- Comparing and Searching Strings -->
+            <section>
+                <h2>Comparing and Searching Strings</h2>
+                <p>PHP provides functions for comparing strings (strcmp, strcasecmp) and searching within strings
+                    (strpos,
+                    str_contains).</p>
+                <br>
+                <h3>Examples:- </h3>
+                <pre><code>&lt;?php
+$str1 = "apple";
+$str2 = "Apple";
+echo strcmp($str1, $str2);  // Output: 1
+echo strcasecmp($str1, $str2);  // Output: 0
+echo strpos("Hello, world!", "world");  // Output: 7
+?&gt;
+            </code></pre>
+            </section>
+        </div>
+
+        <!-- Arrays start -->
+
+        <div id="arrays">
+
+            <header>
+                <h1>Arrays</h1>
+            </header>
+
+            <section>
+                <h2> PHP Arrays</h2>
+                <p>An array in PHP is a data structure that stores multiple values in a single variable. Each value is
+                    accessed via an index or a key.</p>
+                <br>
+                Arrays in PHP are a type of data structure that allows us to store multiple elements of similar or
+                different data types under a single variable thereby saving us the effort of creating a different
+                variable for every data. The arrays are helpful to create a list of elements of similar types, which can
+                be accessed using their index or key. <br>
+
+            </section>
+
+            <!-- Types of Arrays -->
+            <section>
+                <h2>Types of Arrays</h2>
+                <p>PHP supports three types of arrays: Indexed arrays, Associative arrays, and Multidimensional arrays.
+                </p>
+                <br>
+
+                <h3>1. Indexed Array</h3>
+                <p>An indexed array uses numeric indexes to store values.</p>
+                <br>
+                <pre><code>&lt;?php
+    $fruits = array("Apple", "Banana", "Cherry");
+    echo $fruits[1];  // Output: Banana
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>2. Associative Array</h3>
+                <p>An associative array uses named keys instead of numeric indexes.</p>
+                <br>
+                <pre><code>&lt;?php
+    $age = array("Alice" => 25, "Bob" => 30, "Charlie" => 35);
+    echo $age["Bob"];  // Output: 30
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>3. Multidimensional Array</h3>
+                <p>A multidimensional array contains arrays as its elements.</p>
+                <br>
+                <pre><code>&lt;?php
+    $people = array(
+        "Alice" => array("age" => 25, "city" => "New York"),
+        "Bob" => array("age" => 30, "city" => "Los Angeles")
+    );
+    echo $people["Alice"]["city"];  // Output: New York
+    ?&gt;
+                </code></pre>
+            </section>
+
+            <!-- Creating and Accessing Arrays -->
+            <section>
+                <h2>Creating and Accessing Arrays</h2>
+                <br>
+                <h3>Example: Indexed Array</h3>
+                <br>
+                <pre><code>&lt;?php
+    $colors = ["Red", "Green", "Blue"];
+    echo $colors[0];  // Output: Red
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Associative Array</h3>
+                <br>
+                <pre><code>&lt;?php
+    $scores = array("Math" => 90, "Science" => 85);
+    echo $scores["Science"];  // Output: 85
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Multidimensional Array</h3>
+                <br>
+                <pre><code>&lt;?php
+    $grades = array(
+        "John" => array("Math" => 90, "Science" => 85),
+        "Jane" => array("Math" => 95, "Science" => 80)
+    );
+    echo $grades["Jane"]["Math"];  // Output: 95
+    ?&gt;
+                </code></pre>
+            </section>
+
+            <!-- Array Functions -->
+            <section>
+                <h2>Array Functions</h2>
+                <br>
+                <p>PHP provides built-in functions to manipulate arrays, such as <code>count()</code>,
+                    <code>array_merge()</code>, <code>array_push()</code>, <code>array_pop()</code>, and
+                    <code>in_array()</code>.
+                </p>
+                <br>
+
+                <h3>Example: count()</h3>
+                <br>
+                <pre><code>&lt;?php
+    $items = ["Book", "Pen", "Pencil"];
+    echo count($items);  // Output: 3
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: array_merge()</h3>
+                <br>
+                <pre><code>&lt;?php
+    $arr1 = ["Red", "Green"];
+    $arr2 = ["Blue", "Yellow"];
+    $result = array_merge($arr1, $arr2);
+    print_r($result);  // Output: Array ( [0] => Red [1] => Green [2] => Blue [3] => Yellow )
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: array_push()</h3>
+                <br>
+                <pre><code>&lt;?php
+    $stack = ["apple", "banana"];
+    array_push($stack, "cherry");
+    print_r($stack);  // Output: Array ( [0] => apple [1] => banana [2] => cherry )
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: array_pop()</h3>
+                <br>
+                <pre><code>&lt;?php
+    $stack = ["apple", "banana", "cherry"];
+    array_pop($stack);
+    print_r($stack);  // Output: Array ( [0] => apple [1] => banana )
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: in_array()</h3>
+                <br>
+                <pre><code>&lt;?php
+    $colors = ["red", "green", "blue"];
+    echo in_array("green", $colors) ? "Found" : "Not Found";  // Output: Found
+    ?&gt;
+                </code></pre>
+            </section>
+
+            <!-- Inspecting Arrays -->
+            <section>
+                <h2>Inspecting Arrays</h2>
+                <br>
+                <p>Inspect arrays using functions like <code>print_r()</code> and <code>var_dump()</code>.</p>
+                <br>
+                <h3>Example</h3>
+                <br>
+                <pre><code>&lt;?php
+    $array = ["Apple", "Banana", "Cherry"];
+    print_r($array);
+    var_dump($array);
+    ?&gt;
+                </code></pre>
+            </section>
+
+            <!-- Deleting Arrays -->
+            <section>
+                <h2>Deleting Arrays</h2>
+                <br>
+                <p>Use <code>unset()</code> to delete array elements or entire arrays.</p>
+                <br>
+
+                <h3>Example: Delete an Element by Index</h3>
+                <br>
+                <pre><code>&lt;?php
+    $array = ["Red", "Green", "Blue"];
+    unset($array[1]);
+    print_r($array);  // Output: Array ( [0] => Red [2] => Blue )
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Delete an Associative Key</h3>
+                <br>
+
+                <pre><code>&lt;?php
+    $ages = ["Alice" => 25, "Bob" => 30];
+    unset($ages["Bob"]);
+    print_r($ages);  // Output: Array ( [Alice] => 25 )
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Delete the Entire Array</h3>
+                <br>
+                <pre><code>&lt;?php
+    $colors = ["Red", "Green", "Blue"];
+    unset($colors);
+    var_dump($colors);  // Output: NULL
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Remove Last Element (array_pop)</h3>
+                <br>
+                <pre><code>&lt;?php
+    $stack = ["apple", "banana", "cherry"];
+    array_pop($stack);
+    print_r($stack);  // Output: Array ( [0] => apple [1] => banana )
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Remove First Element (array_shift)</h3>
+                <br>
+                <pre><code>&lt;?php
+    $queue = ["apple", "banana", "cherry"];
+    array_shift($queue);
+    print_r($queue);  // Output: Array ( [0] => banana [1] => cherry )
+    ?&gt;
+                </code></pre>
+            </section>
+
+        </div>
+
+        <!-- forms start -->
+
+        <div id="forms">
+
+            <header>
+                <h1>PHP Forms</h1>
+            </header>
+
+            <section>
+                <h2>Forms in PHP </h2>
+                <br>
+                <p>A form in PHP is a way to collect user input and send it to a server for processing. Forms are
+                    typically used in applications for gathering information, such as login forms, registration forms,
+                    and surveys.</p>
+                <br>
+                <h3>Example</h3>
+                <br>
+                <pre><code>&lt;form method="post" action="process.php"&gt;
+        &lt;input type="text" name="username" placeholder="Enter username"&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+                </code></pre>
+            </section>
+
+            <!-- Form Controls -->
+            <section>
+                <h2>Form Controls</h2>
+                <br>
+                <p>PHP forms can have a variety of input controls, including text fields, radio buttons, checkboxes, and
+                    dropdowns. Here are examples:</p>
+                <br>
+
+                <h3>Example: Text Field</h3>
+                <br>
+                <pre><code>&lt;input type="text" name="name" placeholder="Enter your name"&gt;</code></pre>
+                <br>
+
+                <h3>Example: Radio Buttons</h3>
+                <br>
+
+                <pre><code>&lt;input type="radio" name="gender" value="male"&gt; Male
+    &lt;input type="radio" name="gender" value="female"&gt; Female
+                </code></pre>
+                <br>
+
+                <h3>Example: Checkbox</h3>
+                <br>
+                <pre><code>&lt;input type="checkbox" name="subscribe" value="newsletter"&gt; Subscribe to newsletter
+                </code></pre>
+                <br>
+
+                <h3>Example: Dropdown Menu</h3>
+                <br>
+
+                <pre><code>&lt;select name="country"&gt;
+        &lt;option value="USA"&gt;USA&lt;/option&gt;
+        &lt;option value="Canada"&gt;Canada&lt;/option&gt;
+    &lt;/select&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Text Area</h3>
+                <br>
+                <pre><code>&lt;textarea name="message" rows="4" cols="50" placeholder="Enter your message"&gt;&lt;/textarea&gt;
+                </code></pre>
+            </section>
+
+            <!-- Super Global Variables and Arrays -->
+            <section>
+                <h2>Super Global Variables and Arrays</h2>
+                <br>
+                <p>PHP provides superglobal arrays, such as <code>$_GET</code>, <code>$_POST</code>, and
+                    <code>$_REQUEST</code>, to access data submitted via forms.
+                </p>
+                <br>
+
+                <h3>Example: Using $_POST</h3>
+                <br>
+                <pre><code>&lt;?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST["name"];
+        echo "Hello, " . $name;
+    }
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Using $_GET</h3>
+                <br>
+                <pre><code>&lt;?php
+    if (isset($_GET["search"])) {
+        echo "Search term: " . $_GET["search"];
+    }
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Using $_REQUEST</h3>
+                <br>
+                <pre><code>&lt;?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $email = $_REQUEST["email"];
+        echo "Your email is " . $email;
+    }
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Using $_SERVER</h3>
+                <br>
+                <pre><code>&lt;?php
+    echo $_SERVER["PHP_SELF"];
+    ?&gt;  <!-- Output: current script path -->
+                </code></pre>
+                <br>
+
+                <h3>Example: Using $_FILES</h3>
+                <br>
+                <pre><code>&lt;form action="upload.php" method="post" enctype="multipart/form-data"&gt;
+        &lt;input type="file" name="fileToUpload"&gt;
+        &lt;input type="submit" value="Upload"&gt;
+    &lt;/form&gt;
+                </code></pre>
+                <br>
+            </section>
+
+            <!-- Importing and Accessing User Input -->
+            <section>
+                <h2>Importing and Accessing User Input</h2>
+                <br>
+                <p>User input in forms can be accessed and manipulated using superglobals. Examples include validating
+                    and sanitizing input data.</p>
+                <br>
+
+                <h3>Example: Accessing Input with $_POST</h3>
+                <br>
+                <pre><code>&lt;?php
+    $name = htmlspecialchars($_POST["name"]);
+    echo "Hello, " . $name;
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Validating Email</h3>
+                <br>
+                <pre><code>&lt;?php
+    $email = $_POST["email"];
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Valid email!";
+    } else {
+        echo "Invalid email!";
+    }
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Accessing Checkbox Input</h3>
+                <br>
+                <pre><code>&lt;?php
+    if (isset($_POST["subscribe"])) {
+        echo "Thank you for subscribing!";
+    }
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Processing Radio Buttons</h3>
+                <br>
+                <pre><code>&lt;?php
+    $gender = $_POST["gender"];
+    echo "Gender selected: " . $gender;
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Handling Multiple Select</h3>
+                <br>
+                <pre><code>&lt;?php
+    $selectedColors = $_POST["colors"];
+    foreach ($selectedColors as $color) {
+        echo $color . " ";
+    }
+    ?&gt;
+                </code></pre>
+                <br>
+            </section>
+
+
+
+        </div>
+
+        <!-- databases start -->
+
+        <div id="databases">
+            <header>
+                <h1>Databases in Php</h1>
+            </header>
+
+            <section>
+                <h2>Database Operations in PHP</h2>
+                <br>
+                <p>PHP supports various database operations, including inserting, selecting, updating, deleting, and
+                    sorting data. Here are some examples:</p>
+                <br>
+
+                <h3>Insertion Example</h3>
+                <br>
+                <pre><code>&lt;?php
+    $conn = new mysqli("localhost", "username", "password", "database");
+    $sql = "INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com')";
+    $conn->query($sql);
+    $conn->close();
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Selection Example</h3>
+                <br>
+                <pre><code>&lt;?php
+    $conn = new mysqli("localhost", "username", "password", "database");
+    $sql = "SELECT * FROM users";
+    $result = $conn->query($sql);
+    while($row = $result->fetch_assoc()) {
+        echo $row["name"];
+    }
+    $conn->close();
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Update Example</h3>
+                <br>
+                <pre><code>&lt;?php
+    $conn = new mysqli("localhost", "username", "password", "database");
+    $sql = "UPDATE users SET email='newemail@example.com' WHERE name='John Doe'";
+    $conn->query($sql);
+    $conn->close();
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Deletion Example</h3>
+                <pre><code>&lt;?php
+    $conn = new mysqli("localhost", "username", "password", "database");
+    $sql = "DELETE FROM users WHERE name='John Doe'";
+    $conn->query($sql);
+    $conn->close();
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Sorting Example</h3>
+                <br>
+                <pre><code>&lt;?php
+    $conn = new mysqli("localhost", "username", "password", "database");
+    $sql = "SELECT * FROM users ORDER BY name ASC";
+    $result = $conn->query($sql);
+    while($row = $result->fetch_assoc()) {
+        echo $row["name"];
+    }
+    $conn->close();
+    ?&gt;
+                </code></pre>
+                <br>
+            </section>
+
+            <!-- Database Packages -->
+            <section>
+                <h2>Database Packages</h2>
+                <br>
+                <p>PHP supports several database packages, including MySQL, PostgreSQL, SQLite, MongoDB, and Oracle.
+                    Here are five examples:</p>
+                <br>
+                <ul>
+                    <li>MySQL - Open-source, commonly used in web applications.</li>
+                    <li>PostgreSQL - Open-source with advanced features.</li>
+                    <li>SQLite - Lightweight and file-based, ideal for small applications.</li>
+                    <li>MongoDB - NoSQL database, suitable for unstructured data.</li>
+                    <li>Oracle - High-performance, widely used in enterprise applications.</li>
+                </ul>
+                <br>
+            </section>
+
+            <!-- MySQL with PHP -->
+            <section>
+                <h2>Using MySQL with PHP</h2>
+                <br>
+                <p>To interact with MySQL databases, PHP offers the <code>mysqli</code> extension and <code>PDO</code>.
+                    Below is an example using <code>mysqli</code>:</p>
+                <br>
+                <pre><code>&lt;?php
+    $conn = new mysqli("localhost", "username", "password", "database");
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    echo "Connected successfully";
+    $conn->close();
+    ?&gt;
+                </code></pre>
+                <br>
+            </section>
+
+            <!-- Connecting to a Database -->
+            <section>
+                <h2>Connecting to a Database</h2>
+                <br>
+                <p>Establish a connection to your database using the <code>mysqli</code> or <code>PDO</code> extension.
+                </p>
+                <br>
+                <pre><code>&lt;?php
+    $conn = new mysqli("localhost", "username", "password", "database");
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    echo "Connected successfully";
+    $conn->close();
+    ?&gt;
+                </code></pre>
+                <br>
+            </section>
+
+            <!-- Creating Database and Table -->
+            <section>
+                <h2>Creating Database and Table</h2>
+                <br>
+                <p>Use SQL commands to create a database and table:</p>
+                <br>
+                <h3>Creating a Database</h3>
+                <br>
+                <pre><code>&lt;?php
+    $conn = new mysqli("localhost", "username", "password");
+    $sql = "CREATE DATABASE myDB";
+    $conn->query($sql);
+    $conn->close();
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Creating a Table</h3>
+                <br>
+                <pre><code>&lt;?php
+    $conn = new mysqli("localhost", "username", "password", "myDB");
+    $sql = "CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(50), email VARCHAR(50))";
+    $conn->query($sql);
+    $conn->close();
+    ?&gt;
+                </code></pre>
+                <br>
+            </section>
+
+            <!-- Making and Executing Queries -->
+            <section>
+                <h2>Making and Executing Queries</h2>
+                <br>
+                <p>Queries can be executed using the <code>query()</code> method. Here are examples of various queries:
+                </p>
+                <br>
+
+                <h3>Example: Select</h3>
+                <br>
+                <pre><code>&lt;?php
+    $sql = "SELECT * FROM users";
+    $result = $conn->query($sql);
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Insert</h3>
+                <br>
+                <pre><code>&lt;?php
+    $sql = "INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com')";
+    $conn->query($sql);
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Update</h3>
+                <br>
+                <pre><code>&lt;?php
+    $sql = "UPDATE users SET email='alice_new@example.com' WHERE name='Alice'";
+    $conn->query($sql);
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Delete</h3>
+                <br>
+                <pre><code>&lt;?php
+    $sql = "DELETE FROM users WHERE name='Alice'";
+    $conn->query($sql);
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Drop Table</h3>
+                <br>
+                <pre><code>&lt;?php
+    $sql = "DROP TABLE users";
+    $conn->query($sql);
+    ?&gt;
+                </code></pre>
+                <br>
+            </section>
+
+            <!-- Fetching Datasets -->
+            <section>
+                <h2>Fetching Datasets</h2>
+                <br>
+                <p>Fetch data from queries using <code>fetch_assoc()</code> or <code>fetch_all()</code>.</p>
+                <br>
+
+                <h3>Example: Fetching Data</h3>
+                <br>
+                <pre><code>&lt;?php
+    $sql = "SELECT name, email FROM users";
+    $result = $conn->query($sql);
+    while($row = $result->fetch_assoc()) {
+        echo $row["name"] . " - " . $row["email"];
+    }
+    ?&gt;
+                </code></pre>
+                <br>
+            </section>
+
+            <!-- Integrating Forms and Databases -->
+            <section>
+                <h2>Integrating Forms and Databases</h2>
+                <br>
+                <p>Forms allow users to interact with databases. Here are examples of form submissions with database
+                    actions.</p>
+                <br>
+
+                <h3>Example: Insert Data from Form</h3>
+                <br>
+                <pre><code>&lt;form action="insert.php" method="post"&gt;
+        &lt;input type="text" name="name"&gt;
+        &lt;input type="email" name="email"&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Update Data from Form</h3>
+                <br>
+                <pre><code>&lt;form action="update.php" method="post"&gt;
+        &lt;input type="text" name="name"&gt;
+        &lt;input type="email" name="new_email"&gt;
+        &lt;button type="submit"&gt;Update&lt;/button&gt;
+    &lt;/form&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Delete Data from Form</h3>
+                <br>
+                <pre><code>&lt;form action="delete.php" method="post"&gt;
+        &lt;input type="text" name="name"&gt;
+        &lt;button type="submit"&gt;Delete&lt;/button&gt;
+    &lt;/form&gt;
+                </code></pre>
+                <br>
+            </section>
+
+        </div>
+
+        <!-- file systems start -->
+
+        <div id="filesystem">
+
+            <header>
+                <h1>File Systems in PHP</h1>
+            </header>
+
+            <section>
+                <h2>File Permissions</h2>
+                <br>
+                <p>PHP offers various file permission settings for creating and modifying files and directories.
+                    Permissions determine which users can read, write, or execute a file.</p>
+                    <br>
+
+                <h3>Examples of File Permissions</h3>
+                <br>
+                <p>In PHP, <code>chmod()</code> can set permissions. Permissions use a three-digit octal format:</p>
+                <br>
+
+                <h4>Example: Setting Read and Write Permissions</h4>
+                <br>
+                <pre><code>&lt;?php
+    $filename = "example.txt";
+    chmod($filename, 0644); // Owner can read/write, others can read
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <p>Explanation: 0644 sets the owner to have read/write permissions and others to have read permissions.
+                </p>
+                <br>
+            </section>
+
+            <!-- File Operations -->
+            <section>
+                <h2>File Operations</h2>
+                <br>
+                <p>PHP offers functions to perform operations like creating, reading, writing, and deleting files.</p>
+                <br>
+
+                <h3>Example: Creating and Writing to a File</h3>
+                <br>
+                <pre><code>&lt;?php
+    $file = fopen("newfile.txt", "w");
+    fwrite($file, "Hello, PHP File Systems!");
+    fclose($file);
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <p>This code creates <code>newfile.txt</code> and writes text to it using <code>fopen()</code> and
+                    <code>fwrite()</code>.</p>
+                    <br>
+
+                <h3>Example: Reading a File</h3>
+                <br>
+                <pre><code>&lt;?php
+    $file = fopen("newfile.txt", "r");
+    echo fread($file, filesize("newfile.txt"));
+    fclose($file);
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <p>Explanation: <code>fread()</code> reads the file's content, and <code>fclose()</code> closes it after
+                    reading.</p>
+                    <br>
+
+                <h3>Example: Deleting a File</h3>
+                <br>
+                <pre><code>&lt;?php
+    unlink("newfile.txt"); // Deletes the file
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <p>Explanation: <code>unlink()</code> deletes the specified file from the system.</p>
+                <br>
+            </section>
+
+            <!-- File System Functions -->
+            <section>
+                <h2>File System Functions</h2>
+                <br>
+                <p>PHP provides a variety of functions to manage files. Here are some useful examples:</p>
+                <br>
+
+                <h3>Example: Checking if a File Exists</h3>
+                <br>
+
+                <pre><code>&lt;?php
+    if (file_exists("example.txt")) {
+        echo "The file exists!";
+    } else {
+        echo "File does not exist.";
+    }
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <h3>Example: Getting File Size</h3>
+                <br>
+
+                <pre><code>&lt;?php
+    $size = filesize("example.txt");
+    echo "The file size is " . $size . " bytes.";
+    ?&gt;
+                </code></pre>
+
+                <br>
+
+                <h3>Example: Copying a File</h3>
+                <br>
+
+                <pre><code>&lt;?php
+    copy("example.txt", "copy_example.txt");
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <p>This code creates a copy of <code>example.txt</code> and names it <code>copy_example.txt</code>.</p>
+                <br>
+            </section>
+
+            <!-- Working with Directories -->
+            <section>
+                <h2>Working with Directories</h2>
+                <br>
+
+                <p>PHP also provides functions to create, read, and delete directories.</p>
+                <br>
+
+                <h3>Example: Creating a Directory</h3>
+                <br>
+
+                <pre><code>&lt;?php
+    mkdir("new_folder");
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <p>This code creates a new directory named <code>new_folder</code>.</p>
+
+                <br>
+
+                <h3>Example: Listing Files in a Directory</h3>
+                <br>
+
+                <pre><code>&lt;?php
+    $files = scandir("new_folder");
+    foreach($files as $file) {
+        echo $file . "&lt;br&gt;";
+    }
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <p>Explanation: <code>scandir()</code> lists all files in the specified directory.</p>
+                <br>
+
+
+                <h3>Example: Removing a Directory</h3>
+
+                <br>
+
+                <pre><code>&lt;?php
+    rmdir("new_folder");
+    ?&gt;
+                </code></pre>
+                <br>
+
+                <p>This code deletes <code>new_folder</code>, provided it is empty.</p>
+
+                <br>
+            </section>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 My Website. All rights reserved. <br>
+                This website has been created by Anshul.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2ff;
+    color: #2a2b5a;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #41018d; /* Slate blue */
+    color: white;
+    position: fixed;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-size: 50px;
+    
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.sidebar ul li a {
+    color: #d1c4e9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    
+}
+
+.sidebar ul li a:hover {
+    color: #a1c6ea;
+    
+}
+
+/* Content */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #41018d; /* Purple */
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 16px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+section {
+    margin-bottom: 20px;
+    background-color: #f3e5f5; /* Light purple */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #4b3f72;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: 1.4rem;
+    color: #4b3f72;
+    margin-bottom: 8px;
+}
+
+ul {
+    padding-left: 20px;
+    color: #2a2b5a;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Code Blocks */
+.example {
+    background-color: #e8eaf6; /* Light blue */
+    padding: 15px;
+    border-left: 5px solid #4b3f72;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+pre {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #2a2b5a;
+    font-size: 1rem;
+    overflow-x: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #41018d; /* Slate blue */
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
